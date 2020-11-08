@@ -1,0 +1,208 @@
+.book {
+  max-width: 1200px;
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+#book__section_header {
+  text-align: center;
+  font-family: "Great Vibes", Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  color: rgb(153,153,102);
+  margin: 20px;
+}
+
+#book__section_navigation {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+#book__section__nav_items {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.book__section__nav_item {
+  width: 125px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+}
+
+.book__section__nav_item:hover {
+  cursor: pointer;
+  color: rgb(204,153,51);
+}
+
+#book__section_room_container {
+  margin-top: 2vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#book__section_room {
+  background-color: rgba(204, 153, 51, 0.1);
+  width: calc(1000px + 20px * 2);
+  height: calc(500px + 20px * 2);
+  border: 2px solid rgb(105, 105, 105);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#room {
+  width: 1002px;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+.room_show_border {
+  border: 1px solid rgb(211, 211, 211);
+}
+
+.table {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  cursor: move;
+}
+
+.table__img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  cursor: move;
+}
+
+.chair {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  cursor: move;
+}
+
+.chair__img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  cursor: move;
+}
+
+#delete_furniture_container {
+  text-align: center;
+  line-height: 15px;
+  font-variant: small-caps;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+#delete_furniture {
+    letter-spacing: 0.5px;
+}
+
+.recycle_bin__img {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin-top: 7px;
+}
+
+.furniture_selected {
+  background: rgba(211, 211, 211, 0.7);
+}
+
+.active_cell {
+  background-color:rgba(105, 105, 105, 0.7);
+}
+
+#new_furniture_item_container.active_cell,
+#add_furniture_buttons_container.active_cell {
+  background-color: initial;
+}
+
+#delete_furniture_container.active_cell {
+  background-color: rgb(240, 128, 128);
+}
+
+#add_furniture_buttons_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#add_furniture_buttons_small_container {
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgb(105, 105, 105);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+#add_chair_button,
+#add_table_button {
+  width: 76px;
+  height: 38px;
+  padding-left: 3px;
+  line-height: 35px;
+  font-variant: small-caps;
+  box-sizing: border-box;
+}
+
+#add_chair_button:hover,
+#add_table_button:hover {
+  background-color: rgb(195, 240, 230);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+#add_chair_button:hover {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#add_table_button:hover {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#add_chair_button {
+  border-bottom: 1px solid  rgb(105, 105, 105);
+}
+
+#add_table_button {
+  border-top: 1px solid  rgb(105, 105, 105);
+}
+
+.add_furniture_icon {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
