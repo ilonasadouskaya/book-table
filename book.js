@@ -245,7 +245,7 @@ class Table extends Furniture {
   }
 
   setDefaultTables() {
-    const cellNumbers = [12, 16, 19, 33, 37];
+    const cellNumbers = [13, 17, 18, 45];
     cellNumbers.forEach(cell => this.addTable(cell));
   }
 }
@@ -311,7 +311,7 @@ class Chair extends Furniture {
   }
 
   setDefaultChairs() {
-    const cellNumbers = [2, 11, 13, 22, 6, 15, 17, 26, 9, 18, 20, 29, 23, 32, 34, 43, 27, 36, 38, 47];
+    const cellNumbers = [3, 7, 8, 12, 14, 16, 19, 23, 27, 28, 35, 44, 46];
     cellNumbers.forEach(cell => this.addChair(cell));
   }
 }
